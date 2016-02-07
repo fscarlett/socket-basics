@@ -2,10 +2,10 @@ var name = getQueryVariable('name') || 'Anonymous';
 var room = getQueryVariable('room');
 var socket = io();
 
-console.log(name+' wants to join '+room+'!')
+console.log(name+' wants to join '+room+'!')  
 
 // update h1 tag
-jQuery('.room-title').text('Welcome to the '+room+ ' chat room.');
+jQuery('.room-title').text('Welcome to the '+room+ ' chat room, ' +name+'.');
 
 socket.on('connect', function () {
 	console.log('Connected to socket.io server');
