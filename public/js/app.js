@@ -32,17 +32,35 @@ socket.on('message', function (message) {
 
 
 // Handles submitting of new msg
+var entityMap = {
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': '&quot;',
+    "'": '&#39;',
+    "/": '&#x2F;'
+  };
+
+  function escapeHtml(string) {
+    return String(string).replace(/[&<>"'\/]/g, function (s) {
+      return entityMap[s];
+    });
+  }
+
 var $form = jQuery('#message-form');
+
 
 $form.on('submit', function (event) {
 	event.preventDefault();
 
-	var $message = $form.find('input[name=message]');
+	var $rawMessage = $form.find('input[name=message]');
+	var messageEscaped = escapeHtml($rawMessage.val());
+
 
 	socket.emit('message', {
 		name: name,
-		text: $message.val()
+		text: messageEscaped // $message.val()
 	});
 
-	$message.val('');
+	$rawMessage.val('');
 });
