@@ -1,7 +1,7 @@
 /*  styles for sockets.io chat app Fox Scarlett 2016 */
 
 body{
-	background: linear-gradient(to right, #ddd699, #dd999b);
+	background: linear-gradient(to right, #ffffaf, #dd999b);  /* #ddd4a9 */
 }
 
 h1, h2, h3, h4 {
@@ -16,8 +16,11 @@ li {
 	font-family: 'Droid Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/* ==============  FRONT PAGE ============================== */
 
-
+#front-body {
+	background: linear-gradient(to right, #f0f0f0, #33E3F0);
+}
 
 
 
