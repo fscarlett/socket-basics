@@ -3,21 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Post Planetary Chat</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600|Droid+Sans:400" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
 </head>
 <body>
-	<h1 class="room-title">Welcome to kitten world!</h1>
-	<a href="/index.html">Settings</a>
+<div class="container">
+	<h4 class="room-title">You are floating in space</h4>
 
+	<a href="/index.html">Join a different room</a>
 
 	<ul class="messages">
 		<!-- this ul will hold incoming messages -->
 	</ul>
 
 	<form id="message-form">
-		<input type="text" name="message"/>
-		<input type="submit" value="Send" />
+		<input type="text" name="message" autocomplete="off" size="40" autofocus/>
+		<input type="submit" value="Send" class="button-primary" />
 	</form>
+</div>
 
 
 <script src="/js/jquery-2.2.0.min.js"></script>	

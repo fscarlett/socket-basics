@@ -3,23 +3,30 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Post Planetary Chat</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
 </head>
 <body>
-	<div class="container-fluid">
-		<h1>Join the kitten chat</h1>
+	<div class="container">
+		<h1>Join post planetary chat</h1>
 
 		<form action="/chat.html">
 			<div class="form-group">
 				<label for="name">Display Name</label>
-				<input type="text" name="name" class="form-control">
+				<input type="text" name="name" class="form-control" autocomplete="off" autofocus>
 			</div>
 			<div class="form-group">
 				<label for="room">Join a room:</label>
-				<input type="text" name="room" class="form-control">
+				<input type="text" name="room" class="form-control" autocomplete="off">
 			</div>
 			<div class="form-group">
-				<input type="submit" value="Join Chat" class="btn btn-block"/>
+				<input type="submit" value="Join Chat" class="button-primary"/>
 			</div>
 		</form>
 

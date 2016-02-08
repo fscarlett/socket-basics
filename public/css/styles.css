@@ -1,0 +1,32 @@
+/*  styles for sockets.io chat app Fox Scarlett 2016 */
+
+body{
+	background: linear-gradient(to right, #ddd699, #dd999b);
+}
+
+h1, h2, h3, h4 {
+	margin-top: 30px;
+}
+
+ul {
+	margin-top: 30px;
+}
+
+li {
+	font-family: 'Droid Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+/* ==============  CHATROOM PAGE ============================== */
+
+.time {
+	font-size: 70%;
+	font-weight: normal;
+}
