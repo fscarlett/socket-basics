@@ -12,7 +12,7 @@ ul {
 	margin-top: 30px;
 }
 
-li {
+li, input {
 	font-family: 'Droid Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -24,12 +24,24 @@ li {
 
 
 
-
-
-
 /* ==============  CHATROOM PAGE ============================== */
 
 .time {
 	font-size: 70%;
 	font-weight: normal;
+}
+
+
+/* ==============  MEDIA QUERIES ============================== */
+
+@media (max-width: 550px) {
+	.room-title {
+		font-size: 18px; 
+	}
+}
+
+@media (max-width:400px) {
+	input[type="text"] {
+		width: 90%;
+	}
 }
